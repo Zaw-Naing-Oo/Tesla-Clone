@@ -14,20 +14,20 @@ const Header = () => {
 
   return (
     <Container>
-      <a>
-        <img src='/images/logo.svg' />
+      <a href='#'>
+        <img src='/images/logo.svg' alt='logo' />
       </a>
 
       <Menu>
         { cars.map( (car,index) => (
-          <a href='' key={ index }>{ car }</a>
+          <a href='#' key={ index }>{ car }</a>
         )) }
       </Menu>
 
       <RightMenu>
-        <a href=''>Shop</a>
-        <a href=''>Account</a>
-        <a href=''>Menu</a>
+        <a href='#'>Shop</a>
+        <a href='#'>Account</a>
+        <a href='#'>Menu</a>
         <CustomMenu  onClick={ () => setClose(true)} />
       </RightMenu>
 
@@ -36,7 +36,7 @@ const Header = () => {
             <CustomClose  onClick={ () => setClose(false)} />
           </WrapClose>
           { cars.map( (car,index) => (
-             <li><a href='' key={ index }>{ car }</a></li>
+             <li><a href='#' key={ index }>{ car }</a></li>
           )) }
       </BargerNav>
 
